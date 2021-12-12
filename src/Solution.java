@@ -4,7 +4,7 @@ class Solution {
         int end = nums.length;
         int[] res = new int[end];
         for (int n: nums){
-            if(n % 2 == 1){
+            if((n & 1) == 1){
                 res[start] = n;
                 start++;
             }else{
